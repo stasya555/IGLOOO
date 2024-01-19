@@ -1,0 +1,817 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    min-width: 320px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0;
+    background-color: #F3F3F3;
+}
+
+.front_page_header{
+    height: 15px;
+    width: 92%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 6px 15px 2px 15px;
+}
+
+.logo{
+    height: 14px;
+    width: auto;
+}
+
+.name{
+    height: 16px;
+}
+
+.name_header{
+    height: 13px;
+    margin-left: 5px
+}
+
+.icon{
+    height: 5px;
+    width: auto;
+}
+
+.front_page_header_center {
+    display: flex;
+    flex-direction: row;
+    font-size: 6px;
+    color: #63C6E4;
+    gap: 20px;
+    
+}
+
+.front_page_header_center p{
+    cursor: pointer;
+    position:relative;
+    overflow:hidden;
+  }
+  
+.front_page_header_center p:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    background : #63C6E4;
+    left: 45%;
+    height: 1px;
+    bottom: 0;
+    transition: all .3s;
+    opacity: 0.7;
+  }
+  
+.front_page_header_center p:hover:before {
+    width: 100%;
+    left:0;
+}
+
+.front_page_header_right{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.bestsellers_front_page_box_photo{
+    height: 190px;
+    width: auto;
+}
+
+.bestsellers_front_page_box{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px; 
+    background-color: #d3dfe3;
+    padding-top: 20px;
+}
+
+.bestsellers_front_page_box_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.bestsellers_front_page_box_text_title h1{
+    font-weight: normal;
+    font-size: 23px;
+    color: #63C6E4;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.mark{
+    height: 8px;
+    width: 50px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.card_description_price{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.card_description_price p{
+    font-size: 10px;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.card_description_price p1{
+    font-weight: normal;
+    font-size: 9px;
+    text-decoration: line-through;
+    color: #494949;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.bestsellers_front_page_box_text_choice{
+    display: flex;
+    flex-direction: column;
+}
+
+.bestsellers_front_page_box_text_choice_color{
+    display: flex;
+    flex-direction: column;
+}
+
+.bestsellers_front_page_box_text_choice_color h1{
+    font-size: 6px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.choice_color{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.rect_color-blue{
+    height: 10px;
+    width: 10px;
+}
+
+.rect_color-pink{
+    height: 10px;
+    width: 10px;
+}
+
+.rect_color-bg{
+    height: 10px;
+    width: 10px;
+}
+
+.rect_color-brwn{
+    height: 10px;
+    width: 10px;
+}
+
+.icon_add-to-cart-blue{
+    border: none;
+    background: content-box;
+    height: 10px;
+    width: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.icon_count{
+    height: 10px;
+    padding: 10px 0 0 0;
+}
+
+.bestsellers_front_page_box_text_choice_pay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 5px;
+    font-size: 0%;
+    cursor: pointer;
+    color: #ffffff;
+    transition: .5s;
+    padding: 0;
+
+}
+
+.choice_pay_counter_wrap button{
+    border: none;
+    background: content-box;
+}
+
+.choice_pay_counter_wrap b{
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 8px;
+}
+
+.choice_pay_counter_wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #63C6E4;
+    border-radius: 100px;
+    height: 10px;
+    width: 40px;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.icon_add-to-cart_blue{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    color: #ffffff;
+    background-color: #63C6E4;
+    height: 15px;
+    width: 45px;
+    font-size: 5px;
+    margin-top: 10px;
+    padding: 4px 
+}
+
+.bestsellers_front_page_box_text_description{
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.bestsellers_front_page_box_text_description h1{
+    font-size: 6px;
+    color: #ffffff;
+}
+
+.bestsellers_front_page_box_text_description p{
+    font-size: 6px;
+    color: #ffffff;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.section-carousel h1{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: #D7C3C9;
+    
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel_photo_pink{
+    height: 160px;
+}
+
+.carousel_photo_brwn{
+    width: 160px;
+}
+
+.carousel_photo_bg{
+    height: 160px;
+}
+
+.main_customer_reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #B4D5DF;
+}
+
+.main_customer_reviews_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_customer_reviews_text h1{
+    font-size: 12px;
+    color: #63C6E4;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews_text_mark{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.reviews_text_mark p{
+    font-size: 6px;
+    color: #000000;
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 14px;
+}
+
+.icon_vector{
+    height: 3px;
+    width: auto;
+    padding-top: 7px;
+    margin-top: 5px;
+}
+
+.reviews_text_sort{
+    display: flex;
+    flex-direction: row;
+}
+
+.reviews_text_sort p{
+    font-size: 5px;
+    color: #63C6E4;
+    border: 1px solid #63C6E4;
+    border-radius: 100px;
+    padding: 2px;
+    height: 5px;
+}
+
+.icon_filter{
+    height: 6px;
+    width: 6px;
+    border: 1px solid #63C6E4;
+    border-radius: 80px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.main_customer_reviews{
+    padding-left: 15px;
+}
+
+.reviews_text_title{
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+}
+
+.main_customer_reviews_feedback{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.content_box_also_text h1{
+    font-size: 12px;
+    color: #E997AB;
+    display: flex;
+    justify-content: center;
+}
+
+.content_box_also{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content_box_also_photo{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-left: 15px;
+}
+
+.content_box_also_photo_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.also_photo{
+    height: 150px;
+}
+
+.reviews_feedback_photo{
+    height: 200px;
+}
+.icon_view{
+    height: 17px;
+}
+
+.FAQ_page{
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    background-color: #D7C3C9;
+    margin-bottom: 20px;
+}
+
+.FAQ_page_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.FAQ_page_text_description{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 15px 20px;
+}
+
+.FAQ_page_text_description h1{
+    font-size: 12px;
+    font-weight: bold;
+    color: #BE9DAF;
+}
+
+.FAQ_page_text_description p{
+    font-size: 8px;
+    font-weight: light;
+    color: #BE9DAF;
+}
+
+.FAQ_page_text_subscribe{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.FAQ_page_text_subscribe p{
+    font-size: 6px;
+    font-weight: bold;
+    color:  #AE8C9F;
+    border-bottom: 1px solid #BE9DAF;
+}
+
+.btn_subscribe{
+    height: 12px;
+    border: none;
+    background: border-box;
+    padding-left: 5px;
+}
+
+.photo_FAQ_page{
+    height: 220px;
+    width: auto;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.footer_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 6px;
+    font-weight: normal;
+    color: #BE9DAF;
+    gap: 50px;
+    padding: 0 5px;
+}
+
+.footer_text_box-browse ul{
+    padding: 0;
+}
+
+.footer_wage-type_creator{
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text_box-contact ul{
+    padding: 0;
+    list-style: none;
+}
+
+.footer_wage-type_photo{
+    padding: 5px;
+}
+
+.name_footer {
+    height: 19px;
+}
+
+.footer_text_box-service{
+    display: none;
+}
+
+.content_box_also_photo_card_desctop{
+    display: none;
+}
+
+.reviews_feedback_one_desctop{
+    display: none;
+}
+@media (min-width: 768px){
+
+    .footer_text_box-service{
+        display: flex;
+    }
+
+    .front_page_header{
+        width: 97%;
+        height: auto;
+    }
+
+    .bestsellers_front_page_box{
+        height: 450px;
+    }
+
+    .bestsellers_front_page_box_photo{
+        height: 450px;
+    }
+
+    .bestsellers_front_page_box_text_title h1{
+        font-size: 40px;
+    }
+
+    .mark{
+        height: 18px;
+        width: auto;
+    }
+
+    .card_description_price p{
+        font-size: 14px;
+    }
+
+    .card_description_price p1{
+        font-size: 12px;
+    }
+
+    .bestsellers_front_page_box_text_choice_color h1{
+        font-size: 12px;
+    }
+
+    .rect_color-blue{
+        height: 20px;
+        width: 20px;
+    }
+
+    .rect_color-pink{
+        height: 20px;
+        width: 20px;
+    }
+
+    .rect_color-bg{
+        height: 20px;
+        width: 20px;
+    }
+
+    .rect_color-brwn{
+        height: 20px;
+        width: 20px;
+    }
+
+    .bestsellers_front_page_box_text_choice_color{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .choice_color{
+        margin-bottom: 10px;
+    }
+
+    .bestsellers_front_page_box_text_description p {
+        font-size: 12px;
+    }
+
+    .bestsellers_front_page_box_text_description h1 {
+        font-size: 12px;
+    }
+
+    .bestsellers_front_page_box_text {
+        justify-content: center;
+    }
+
+    .bestsellers_front_page_box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-carousel h1 {
+        font-size: 20px;
+    }
+
+    .main_customer_reviews_text h1 {
+        font-size: 20px;
+    }
+
+    .carousel_photo_bg {
+        height: 250px;
+    }
+
+    .reviews_text_title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .reviews_text_sort{
+        padding-right: 15px;
+    }
+
+    .reviews_feedback_photo{
+        height: 450px;
+    }
+
+    .main_customer_reviews_feedback{
+        gap: 60px;
+        justify-content: center;
+    }
+
+    .content_box_also_text h1 {
+        font-size: 20px;
+    }
+
+    .also_photo{
+        height: 350px;
+    }
+
+    .content_box_also_photo{
+        gap: 60px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .FAQ_page{
+        height: 430px;
+    }
+
+    .photo_FAQ_page{
+        height: 430px;
+    }
+
+    .FAQ_page_text_description h1{
+        font-size: 24px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .FAQ_page_text_description p{
+        font-size: 12px;
+    }
+
+    .btn_subscribe{
+        height: 28px;
+    }
+
+    .FAQ_page_text_subscribe p{
+        font-size: 12px;
+        border-bottom: 2px solid #BE9DAF;
+    }
+
+    .FAQ_page_text {
+        justify-content: center;
+        padding-left: 15px;
+    }
+
+    .footer_text{
+        font-size: 12px;
+    }
+
+    .footer_text_box-service{
+        display: flex;
+    }
+
+    .name_footer{
+        height: 40px;
+    }
+
+    .icon_pay{
+        height: 25px;
+    }
+
+    .footer_wage-type_creator{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .front_page_header {
+        width: 98%;
+        height: auto;
+    }
+
+    .carousel_photo_bg {
+        height: 350px;
+    }
+
+    .reviews_text_mark p{
+        font-size: 12px;
+    }
+
+    .icon_star{
+        height: 15px;
+        padding-top: 9px;
+    }
+
+    .reviews_text_sort p{
+        font-size: 12px;
+        height: 15px;
+    }
+
+    .icon_filter{
+        height: 17px;
+        width: 17px;
+        margin-top: 10px;
+        padding: 3px;
+    }
+
+    .icon_view{
+        height: 25px;
+    }
+
+    .photo_FAQ_page {
+        height: 600px;
+    }
+
+    .FAQ_page {
+        padding-top: 50px;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .FAQ_page_text {
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+    .FAQ_page_text_description h1 {
+        font-size: 40px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .FAQ_page_text_description p {
+        font-size: 20px;
+    }
+
+    .FAQ_page_text_subscribe p {
+        font-size: 20px;
+    }
+
+    .btn_subscribe {
+        height: 50px;
+        padding-left: 10px;
+    }
+
+    .footer_text {
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_wage-type_creator {
+        font-size: 13px;
+    }
+
+    .bestsellers_front_page_box_text{
+        padding-left: 30px;
+    }
+
+    .bestsellers_front_page_box {
+        justify-content: space-around;
+    }
+
+    .content_box_also_photo_card_desctop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .also_photo {
+        height: 250px;
+    }
+
+    .reviews_feedback_one_desctop{
+        display: flex;
+    }
+
+    .also_photo {
+        height: 200px;
+        padding-top: 20px;
+    }
+
+}

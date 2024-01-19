@@ -1,0 +1,774 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    min-width: 320px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0;
+    background-color: #F3F3F3;
+}
+
+.front_page_header{
+    height: 15px;
+    width: 90%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 6px 15px 2px 15px;
+}
+
+.logo{
+    height: 14px;
+    width: auto;
+}
+
+.name{
+    height: 16px;
+}
+
+.icon{
+    height: 5px;
+    width: auto;
+}
+
+.front_page_header_center {
+    display: flex;
+    flex-direction: row;
+    font-size: 6px;
+    color: #63C6E4;
+    gap: 20px;
+    
+}
+
+.front_page_header_center p{
+    cursor: pointer;
+    position:relative;
+    overflow:hidden;
+    cursor: pointer;
+  }
+  
+.front_page_header_center p:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    background : #63C6E4;
+    left: 45%;
+    height: 1px;
+    bottom: 0;
+    transition: all .3s;
+    opacity: 0.7;
+  }
+  
+.front_page_header_center p:hover:before {
+    width: 100%;
+    left:0;
+}
+
+.front_page_header_right{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.front_page_box_title h1{
+    font-weight: normal;
+    font-size: 25px;
+    padding: 50px 0 0 15px;
+    color: #63C6E4;
+    cursor: pointer;
+}
+
+.front_page_box_title h2{
+    font-weight: normal;
+    font-size: 6px;
+    padding-left: 15px;
+    color: #63C6E4;
+    cursor: pointer;
+}
+
+.front_page_box{
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+    background-color: #d3dfe3;
+}
+
+.photo_front_page{
+    height: 190px;
+    width: auto;
+    padding-top: 25px;
+}
+
+.section_bestsellers_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 6px;
+    font-weight: bolder;
+    color: #B4D5DF;
+    margin-top: 20px;
+}
+
+.navigation_icon{
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.section_bestsellers_card{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-left: 15px;
+}
+
+.card{
+    height: 120px;
+    width: 120px;
+}
+
+.card_description_title h1{
+    font-size: 12px;
+    font-weight: bold;
+    color: #63C6E4;
+    cursor: pointer;
+}
+
+.card_description_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.like{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.card_description_price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card_description_price p{
+    font-size: 10px;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card_description_price p1{
+    font-weight: lighter;
+    font-size: 9px;
+    text-decoration: line-through;
+    color: #8A8A8A;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.icon_add{
+    width: 70px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.section_about-us{
+    background-color: #EBCFD6;
+    margin-top: 10px;
+}
+
+.section_about-us_text{
+    color: #E997AB;
+}
+
+.section_about-us_text_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section_about-us_text_title h1{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.navigation_icon_pink{
+    width: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.section_about-us_text h2{
+    font-size: 8px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.section_about-us_text p{
+    font-size: 6px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.section_about-us_photo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    gap: 30px;
+}
+
+.card_shirt{
+    width: 125px;
+    height: auto;
+}
+
+.card_shirt_tablet_desctop{
+    display: none;
+}
+
+
+.icon_view{
+    width: 75px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.section_about-us_card_shirt{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center
+}
+
+.icon_view_tablet_desctop{
+    display: none;
+}
+.main_shop-all{
+    margin-bottom: 20px;
+}
+
+.main_shop-all_text h1{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #D7C3C9;
+    cursor: pointer;
+}
+
+.main_shop-all_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.main_photo_small{
+    height: 113px;
+    width: 90px;
+    padding: 10px 10px 0 15px;
+}
+
+.main_photo_biggest{
+    height: 250px;
+    width: auto;
+    padding-right: 20px;
+}
+
+.main_shop-all_photo{
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation_icon_grey{
+    width: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.main_shop-all_photo_small{
+    display: flex;
+    flex-direction: column;
+}
+
+.FAQ_page{
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    background-color: #D7C3C9;
+    margin-bottom: 20px;
+}
+
+.FAQ_page_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.FAQ_page_text_description{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 15px 20px;
+}
+
+.FAQ_page_text_description h1{
+    font-size: 12px;
+    font-weight: bold;
+    color: #BE9DAF;
+    cursor: pointer;
+}
+
+.FAQ_page_text_description p{
+    font-size: 8px;
+    font-weight: light;
+    color: #BE9DAF;
+    cursor: pointer;
+}
+
+.FAQ_page_text_subscribe{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+.FAQ_page_text_subscribe p{
+    font-size: 6px;
+    font-weight: bold;
+    color:  #AE8C9F;
+    border-bottom: 1px solid #BE9DAF;
+    cursor: pointer;
+}
+
+.btn_subscribe{
+    height: 12px;
+    border: none;
+    background: border-box;
+    cursor: pointer;
+}
+
+.photo_FAQ_page{
+    height: 220px;
+    width: auto;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.name_footer{
+    height: 19px;
+}
+
+.footer_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 6px;
+    font-weight: normal;
+    color: #BE9DAF;
+    gap: 50px;
+    padding: 0 5px;
+}
+
+.footer_text_box-browse ul{
+    padding: 0;
+}
+
+.footer_text_box-service{
+    display: none;
+}
+
+.footer_wage-type_creator{
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text_box-contact ul{
+    padding: 0;
+    list-style: none;
+}
+
+.footer_wage-type_photo{
+    padding: 5px;
+}
+
+.name_header{
+    height: 13px;
+    margin-left: 5px
+}
+
+.front_page_header_left{
+    display: flex;
+    align-items: center;
+}
+
+.product_wrapper_shirt_desctop{
+    display: none;
+}
+
+.like{
+    cursor: pointer;
+}
+
+.like:active{
+    filter: drop-shadow();
+}
+
+.section_about-us_text_title {
+    padding-top: 20px;
+}
+
+@media (min-width: 768px){
+    .front_page_header{
+        width: 97%;
+        height: auto;
+    }
+
+    .front_page_box{
+        height: 450px;
+    }
+
+    .photo_front_page{
+        height: 425px;
+    }
+
+    .front_page_box_title{
+        padding: 20px 0 0 15px;
+    }
+
+    .front_page_box_title h1{
+        font-size: 48px;
+        cursor: pointer;
+    }
+    .front_page_box_title h2{
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+    .card{
+        height: 320px;
+        width: 320px;
+    }
+
+    .section_bestsellers_card{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card_description_add{
+        display: flex;
+        justify-content: center;
+    }
+
+    .section_about-us{
+        height: 420px;
+    }
+
+    .section_about-us_text_title h1{
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .section_bestsellers_title{
+        font-size: 12px;
+    }
+
+    .navigation_icon {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .logo{
+        height: 30px;
+        width: auto;    
+        margin-left: 15px;
+
+    }
+
+    .name_header{
+        height: 23px;
+        margin-left: 10px;
+    }
+
+    .front_page_header_center{
+        font-size: 10px;
+        gap: 60px;
+    }
+
+    .icon{
+        height: 10px;
+        width: auto;
+    }
+
+    .section_bestsellers{
+        margin-bottom: 20px;
+    }
+
+    .navigation_icon_pink{
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .section_about-us_text h2{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    
+    .section_about-us_text p{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .card_shirt{
+        width: 220px;
+        height: auto;
+    }
+
+    .card_shirt_tablet_desctop{
+        display: flex;
+        width: 220px;
+        height: auto;
+    }
+
+    .section_about-us_photo{
+        padding-top: 20px;
+        padding-left: 15px;
+        gap: 20px;
+    }
+
+    .main_photo_biggest{
+        height: 580px;
+    }
+
+    .main_photo_small{
+        height: 280px;
+        width: auto;
+    }
+
+    .main_shop-all_photo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon_view_tablet_desctop{
+        display: flex;
+        width: 75px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .FAQ_page{
+        height: 430px;
+    }
+
+    .photo_FAQ_page{
+        height: 430px;
+    }
+
+    .FAQ_page_text_description h1{
+        font-size: 24px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .FAQ_page_text_description p{
+        font-size: 12px;
+    }
+
+    .btn_subscribe{
+        height: 28px;
+    }
+
+    .FAQ_page_text_subscribe p{
+        font-size: 12px;
+        border-bottom: 2px solid #BE9DAF;
+    }
+
+    .FAQ_page_text {
+        justify-content: center;
+        padding-left: 15px;
+    }
+
+    .footer_text{
+        font-size: 12px;
+    }
+
+    .footer_text_box-service{
+        display: flex;
+    }
+
+    .name_footer{
+        height: 40px;
+    }
+
+    .icon_pay{
+        height: 25px;
+    }
+
+    .footer_wage-type_creator{
+        font-size: 10px;
+    }
+
+    .section_about-us_card_shirt{
+        gap: 15px;
+    }
+    
+}
+
+@media (min-width: 1024px){
+
+    .photo_front_page {
+        height: 655px;
+    }
+
+    .front_page_box {
+        height: 680px;   
+        display: flex; 
+        justify-content: space-evenly;
+    }
+
+    .front_page_box_title h1 {
+        font-size: 80px;
+        cursor: pointer;
+    }
+
+    .front_page_box_title h2 {
+        font-size: 20px;
+        width: 500px;
+        cursor: pointer;
+    }
+
+    .front_page_header {
+        width: 98%;
+        height: auto;
+    }
+
+    .card{
+        height: 200px;
+        width: auto;
+    }
+
+    .product_wrapper_shirt_desctop{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_bestsellers_card {
+        display: flex;
+        padding-left: 15px;
+        padding: 10px;
+        gap: 50px;
+    }
+
+    .card_shirt {
+        width: 270px;
+        height: auto;
+    }
+
+    .card_shirt_tablet_desctop {
+        display: flex;
+        width: 270px;
+        height: auto;
+    }
+
+    .section_about-us_photo {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .section_about-us {
+        height: 540px;
+    }
+
+    .main_photo_biggest {
+        height: 720px;
+    }
+
+    .main_photo_small {
+        height: 350px;
+        width: auto;
+    }
+
+    .main_shop-all_text h1 {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navigation_icon_grey {
+        width: 20px;
+        padding-bottom: 7px;
+    }
+
+    .photo_FAQ_page {
+        height: 600px;
+    }
+
+    .FAQ_page {
+        padding-top: 50px;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .FAQ_page_text {
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+    .FAQ_page_text_description h1 {
+        font-size: 40px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .FAQ_page_text_description p {
+        font-size: 20px;
+    }
+
+    .FAQ_page_text_subscribe p {
+        font-size: 20px;
+    }
+
+    .btn_subscribe {
+        height: 50px;
+        padding-left: 10px;
+    }
+
+    .footer_text {
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_wage-type_creator {
+        font-size: 13px;
+    }
+}
